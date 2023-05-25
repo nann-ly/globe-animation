@@ -8,10 +8,16 @@ export const HomePage = () => {
     <img className={'absolute -z-10 w-full h-full object-fill top-0'} alt={'background'}
          src={'/images/background-dark.jpg'}/>
     <h1 className={'text-8xl absolute font-bold animate-pulse'}>A Global Animation.</h1>
-    <ScrollingText className={'absolute bottom-[16px] right-10 sm:bottom-[100px] sm:left-[400px] w-[260px] whitespace-pre-wrap  h-[240px] pl-4 border-2 border-solid rounded'}
-    delay={4000}>
-      {content}</ScrollingText>
+    <div className={'absolute bottom-[16px] right-10 sm:bottom-[100px] sm:left-[400px] w-[260px]  grid'}>
+      <a className={'justify-self-end'} href={'https://github.com/nann-ly/globe-animation'} target={'_blank'}>
+        <img src={'https://img.shields.io/static/v1?style=for-the-badge&message=GitHub&color=181717&logo=GitHub&logoColor=FFFFFF&label=&'}/>
+      </a>
+      <ScrollingText className={'whitespace-pre-wrap h-[240px] pl-4 border-2 border-solid rounded'}
+                     delay={4000}>
+        {content}</ScrollingText>
+    </div>
     <GlobeThree className={'mt-[140px] sm:mt-10 cursor-grab roll-in'} size={size !== undefined && size.width <= 768 ? 320 : 600}/>
+
 
   </>
 }
