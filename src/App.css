@@ -1,0 +1,13 @@
+.roll-in {
+    animation: roll-in 6s ease;
+}
+@keyframes roll-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-20%) rotate(-30deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px) rotate(0deg);
+    }
+}
